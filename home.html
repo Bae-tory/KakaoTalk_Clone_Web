@@ -12,6 +12,18 @@ body - 웹사이트 콘텐츠
     sizes="16x16 32x32 64x64"
     href="https://nomadcoders.co/m.png"
   />
+  <style>
+    h1 {
+      color: yellowgreen;
+      text-decoration: underline;
+      font-size: large;
+      font-weight: 300;
+    }
+    address {
+      color: tomato;
+      text-align: center;
+    }
+  </style>
   <title>Home - My First website.</title>
   <link href="styles.css" rel="stylesheet" />
   <meta charset="utf-8" />
@@ -91,5 +103,36 @@ body - 웹사이트 콘텐츠
     </form>
 
     <label for="profile">Profile photo</label>
+    <style>
+      div {
+        display: inline;
+        height: 150px;
+        width: 150 px;
+        background-color: tomato;
+      }
+      span {
+        display: block;
+        background-color: turquoise;
+      }
+    </style>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <!-- 다른 요소가 올 수 있는 것은 inline(아주 작은 글, 링크, 주소 등.. (span, a ,image..)) -->
+    <!-- inline 제외한 box들은 세로 정렬되며 block이라고 함 -->
+    <!-- inline은 넓이와 높이가 없다 -->
+    <!-- block은 넓이와 높이가 있다 -->
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+    <span>hello</span>
+
+    <img src="logo/image.jpg" />
+    <span>hello</span>
+    <a href="#">link</a>
+    <p>this is paragraph</p>
+    <span>hello</span>
+    <address>hello</address>
   </body>
 </html>
