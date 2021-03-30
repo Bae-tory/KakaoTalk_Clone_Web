@@ -13,6 +13,9 @@ body - 웹사이트 콘텐츠
     href="https://nomadcoders.co/m.png"
   />
   <style>
+    * {
+      border: 2px dashed blue;
+    }
     h1 {
       color: yellowgreen;
       text-decoration: underline;
@@ -26,19 +29,58 @@ body - 웹사이트 콘텐츠
     html{
         background-color: tomato;
     }
+    /* 정사각형 - 공통 속성을 잡음*/
     div{
-        height: 150px;
-        width: 150px;
+        margin-left: 20px;
+        margin-right: 10px;
         background-color: whitesmoke;
+        padding: 10px;
+        /* border: 2px solid black; */
+    }
+    /* 배경 */
+    body{
+      background-color: thistle;
+      margin-top: 30px;
+      margin-left: 25px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    /* id로 가리킬 수 있음 */
+    #first{
+      background-color: whitesmoke;
+      width: 150px;
+      height: 150px;
+    }
+    #second{
+      background-color: wheat;
+      width: 100px;
+      height: 100px;
+    }
+    #third{
+      background-color: tomato;
+      width: 50px;
+      height: 50px;
     }
   </style>
   <title>Home - My First website.</title>
   <link href="styles.css" rel="stylesheet" />
   <meta charset="utf-8" />
-  <meta name="description" content="this is sample description!" />
+  <meta name="description" content="this is sample de scription!" />
+  <!-- box는 세가지 속성이 있는데 margin,border,padding이 있음  -->
+  <!-- collapsing margin은 box와 body의 경계가 같을 때 일어나고 위 아래로 하나의 margin값만 적용되는 것을 말한다. -->
 </head>
+<body>
+  <div id="first">
+    <div id="second">
+      <div id="third">
+        <span>hello!</span>
+        <span>hello!</span>
+        <span>hello!</span>
+        <span>hello!</span>
+      </div>
+    </div>
+  </div>
 
-<div></div>
-
+</body>
 
 </html>
