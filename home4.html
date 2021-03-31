@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="kr" />
+<head>
+  <link rel="shortcut icon" sizes="16x16 32x32 64x64"
+  href="https://nomadcoders.co/m.png"
+<title>Home - My First website!!.</title>
+<link href="style.css" rel="stylesheet" />
+<meta charset="utf-8" />
+<meta name="description" content="this is sample description!" />
+
+<style>
+  body {
+      /* flex 컨테이너는 2개의 축을 가지고 있음 주축(default 가로)과 교차축(default 세로) */
+      /* justifyContent는 주축 align-items는 교차축에 적용 */
+      /* vh는 viewport로 스크린 높이를 일컫음 */
+    height: 100vh;
+    margin: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+  }
+  span {
+    background-color: tomato;
+    color: white;
+  }
+  div{
+      width: 200px;
+      height: 200px;
+      background-color: teal;
+  }
+  #second{
+      background-color: wheat;
+  }
+</style>
+</head>
+<body>
+    <div></div>
+    <div id="second"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
