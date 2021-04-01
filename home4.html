@@ -14,11 +14,18 @@
       /* flex 컨테이너는 2개의 축을 가지고 있음 주축(default 가로)과 교차축(default 세로) */
       /* justifyContent는 주축 align-items는 교차축에 적용 */
       /* vh는 viewport로 스크린 높이를 일컫음 */
+      /* 
+      main axis, cross axis의 기본 값을 바꾸기 위해서는 flex-direction을 사용한다.
+      flex-direction의 기본 값을 row이다.
+      원하는 만큼 flex 컨테이너를 만들 수 있다.
+      flex wrap 을 wrap로 설정하면 한 줄에 컨텐츠가 들어갈 수 있는 만큼만 보여주고 나머지는 다음 줄로 넘김.
+      no wrap일 경우 크기를 줄여서라도 한 줄로 표시 */
     height: 100vh;
     margin: 20px;
     display: flex; 
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction:column-reverse;
   }
   span {
     background-color: tomato;
@@ -26,7 +33,13 @@
   }
   div{
       width: 200px;
+      margin: 20px;
       height: 200px;
+      display: flex;
+      font-size: larger;
+      color: white;
+      justify-content: center;
+      align-items: center;
       background-color: teal;
   }
   #second{
@@ -35,9 +48,9 @@
 </style>
 </head>
 <body>
-    <div></div>
-    <div id="second"></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div>1</div>
+    <div id="second">2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
 </body>
