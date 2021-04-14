@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- 
+head - 웹사이트 환경 
+body - 웹사이트 콘텐츠
+기본 형태 <tagname attrname="attrvalue"> </tagname>
+-->
+
+<html lang="kr" />
+<head>
+  <link
+    rel="shortcut icon"
+    sizes="16x16 32x32 64x64"
+    href="https://nomadcoders.co/m.png"
+  />
+  <title>Home - My First website.</title>
+  <link href="styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="description" content="this is sample description!" />
+</head>
+
+<html>
+  <style>
+    body {
+      height: 1000vh;
+      margin: 20px;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      color: white;
+      position: static;
+    }
+    span {
+      background-color: tomato;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: underline;
+    }
+    input {
+      border: 1px solid;
+    }
+    input:required {
+      border-color: tomato;
+    }
+    input[placeholder~="name"] {
+      background-color: pink;
+    }
+    a:visited {
+      color: tomato;
+    }
+    a:hover {
+      color: teal;
+    }
+    a:focus {
+      color: turquoise;
+    }
+    /* focus 된 자식의 부모 */
+    form:focus-within {
+      border-color: seagreen;
+    }
+    /* 동시에 줄 수도 있음 */
+    form:hover input:focus {
+      background-color: sienna;
+    }
+  </style>
+  <body>
+    <a href="https://apple.com">Go to apple</a>
+    <form>
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+      <input type="text" name="" id="" />
+    </form>
+  </body>
+</html>
