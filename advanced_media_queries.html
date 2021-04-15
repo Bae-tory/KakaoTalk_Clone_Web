@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- 
+head - 웹사이트 환경 
+body - 웹사이트 콘텐츠
+기본 형태 <tagname attrname="attrvalue"> </tagname>
+-->
+
+<html lang="kr" />
+<head>
+  <link
+    rel="shortcut icon"
+    sizes="16x16 32x32 64x64"
+    href="https://nomadcoders.co/m.png"
+  />
+  <title>Home - My First website.</title>
+  <link href="styles.css" rel="stylesheet" />
+  <meta charset="utf-8" />
+  <meta name="description" content="this is sample description!" />
+</head>
+
+<html>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      align-items: flex-start;
+      justify-content: center;
+    }
+    div {
+      background-color: teal;
+      width: 200px;
+      height: 200px;
+    }
+    @media screen and (min-width: 600px) and (max-width: 750px) {
+      div {
+        background-color: tomato;
+      }
+    }
+  </style>
+  <body>
+    <div></div>
+  </body>
+</html>
