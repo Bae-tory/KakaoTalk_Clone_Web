@@ -21,27 +21,28 @@ body - 웹사이트 콘텐츠
 <html>
   <style>
     body {
-      display: flex;
-      height: 100vh;
-      align-items: flex-start;
-      justify-content: center;
+      height: 1000vh;
+      margin: 20px;
     }
     div {
-      background-color: teal;
-      width: 200px;
-      height: 200px;
+      width: 100px;
+      height: 100px;
+      color: white;
+      position: static;
     }
-    @media screen and (min-width: 600px) and (max-width: 750px) and (orientation: portrait) {
-      div {
-        background-color: tomato;
-      }
-      span {
-        font-size: 36px;
-      }
+    span {
+      background-color: tomato;
+      padding: 5px;
+      border-radius: 5px;
+      text-decoration: underline;
+    }
+    input::placeholder {
+      color: yellowgreen;
     }
   </style>
   <body>
-    <div></div>
-    <span>Please flip your phone</span>
+    <form>
+      <input type="text" placeholder="Name" />
+    </form>
   </body>
 </html>
