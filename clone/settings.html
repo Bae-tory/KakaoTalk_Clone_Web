@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More</title>
+</head>
+
+<body>
+    <!-- CSS 컨벤션 -> BEM -->
+    <!-- FontAwesome, Heroicons -->
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <!-- 모든 아이콘은 자기만의 클래스가 있음, i는 icon이란 표시 -->
+            <i class="fas fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fas fa-battery-full fa-lg"></i>
+            <i class="fas fa-bolt"></i>
+        </div>
+    </div>
+
+    <!-- header.alt-header>div.alt-header__column*3 -->
+    <header class="alt-header">
+        <div class="alt-header__column">
+            <a href="more.html">
+                <i class="fas fa-angle-left fa-3x"></i>
+            </a>
+        </div>
+        <div class="alt-header__column">
+            <h1 class="alt-header__title">Settings</h1>
+        </div>
+        <div class="alt-header__column">
+            <i class="fas fa-search fa-2x"></i>
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <ul class="settings-list">
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Notices</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-flask"></i>
+                    <span>Cocoa_Lab</span>
+                </div>
+                <div class="settings__setting-column"></div>
+            </li>
+            <li class="settings__setting">
+                <div class="settings__setting-column">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>Version</span>
+                </div>
+                <div class="settings__setting-column">Lastest Version</div>
+            </li>
+        </ul>
+    </main>
+
+    <!-- nav>ul>li*4>a -->
+    <nav class="nav">
+        <ul class="nav__list">
+            <li>
+                <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+            </li>
+            <li>
+                <a class="nav__link" href="chat.html">
+                    <span class="nav__notification badge">1</span>
+                    <i class="far fa-comment fa-2x"></i></a>
+            </li>
+            <li>
+                <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+            </li>
+            <li>
+                <a class="nav__link" href="more.html">
+                    <span class="nav__new"></span>
+                    <i class="fas fa-ellipsis-h fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 스크립트는 항상 body 마지막 태그에 위치해야 한다. -->
+    <script src="https://kit.fontawesome.com/678044101c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
