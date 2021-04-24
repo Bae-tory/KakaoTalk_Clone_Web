@@ -5,7 +5,7 @@ It is a web front source that contains KakaoTalk clone content named CocoaTalk a
 
 ##Splash, Only Mobile(MediaQuery)
 
-<img width="10%" src="https://user-images.githubusercontent.com/45292707/115945021-7bbea800-a4f4-11eb-96da-a50c8fad1aa4.png"/><img width="10%" src="https://user-images.githubusercontent.com/45292707/115945025-7d886b80-a4f4-11eb-834c-4ee6682fa79c.png"/>
+<img width="10%" src="https://user-images.githubusercontent.com/45292707/115945021-7bbea800-a4f4-11eb-96da-a50c8fad1aa4.png"/>        <img width="10%" src="https://user-images.githubusercontent.com/45292707/115945025-7d886b80-a4f4-11eb-834c-4ee6682fa79c.png"/>
 
 ##Login
 
